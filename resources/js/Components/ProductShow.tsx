@@ -4,6 +4,12 @@ import {
   Card,
   CardContent,
 } from "@/Components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/Components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 export const ProductsShow = () => {
   return (
@@ -37,13 +43,97 @@ export const ProductsShow = () => {
               </div>
             </CardContent>
           </Card>
-          <Card className="rounded-none shadow-none border w-1/4 h-[20rem]">
+          <Card className="rounded-none shadow-none border w-1/4 h-[20rem] relative">
             <CardContent className="p-2">
               <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
               <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
-              <img src="https://img.freepik.com/free-vector/realistic-cyber-monday-sale-illustration_23-2149131027.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740" alt="laptop-sale" className="h-[12rem] w-full mt-3 mix-blend-multiply" />
+              <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+              <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
             </CardContent>
           </Card>
+        </div>
+        <div className="flex flex-row items-center">
+          <Carousel
+            plugins={[
+              Autoplay({ delay: 2000 }),
+            ]}
+            opts={{
+              align: "start",
+              loop: true,
+            }}>
+            <CarouselContent className="mx-[0.5px]">
+              <CarouselItem className="basis-1/5 ps-0">
+                <Card className="rounded-none shadow-none border h-[20rem] relative">
+                  <CardContent className="p-2">
+                    <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
+                    <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
+                    <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+                    <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="basis-1/5 ps-0">
+                <Card className="rounded-none shadow-none border h-[20rem] relative">
+                  <CardContent className="p-2">
+                    <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
+                    <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
+                    <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+                    <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="basis-1/5 ps-0">
+                <Card className="rounded-none shadow-none border h-[20rem] relative">
+                  <CardContent className="p-2">
+                    <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
+                    <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
+                    <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+                    <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="basis-1/5 ps-0">
+                <Card className="rounded-none shadow-none border h-[20rem] relative">
+                  <CardContent className="p-2">
+                    <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
+                    <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
+                    <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+                    <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="basis-1/5 ps-0">
+                <Card className="rounded-none shadow-none border h-[20rem] relative">
+                  <CardContent className="p-2">
+                    <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
+                    <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
+                    <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+                    <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="basis-1/5 ps-0">
+                <Card className="rounded-none shadow-none border h-[20rem] relative">
+                  <CardContent className="p-2">
+                    <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
+                    <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
+                    <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+                    <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="basis-1/5 ps-0">
+                <Card className="rounded-none shadow-none border h-[20rem] relative">
+                  <CardContent className="p-2">
+                    <p className="text-lg font-bold uppercase mt-2">best sale <span className="text-[red]">television</span></p>
+                    <p className="text-lg"><span className="line-through text-gray-500">$800.00</span> $450.00</p>
+                    <img src="/images/laptop-img.png" alt="laptop-sale" className="h-[11rem] w-full mt-3 " />
+                    <Button className="capitalize bottom-2 rounded-none absolute" variant="destructive">shop now<i className="ms-2 ri-shopping-cart-line"></i></Button>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </section>

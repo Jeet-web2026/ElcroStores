@@ -223,6 +223,8 @@ export default function Welcome({
                     </div>
                 </section>
                 <ProductsShow />
+                <ProductsShow />
+                <ProductsShow />
             </MainLayout >
         </>
     );
