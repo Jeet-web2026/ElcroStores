@@ -5,7 +5,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
             <Navbar />
-            <div className='h-full w-screen'>
+            <div className='h-full w-full'>
                 {children}
             </div>
         </>
