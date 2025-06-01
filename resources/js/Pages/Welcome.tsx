@@ -20,8 +20,8 @@ export default function Welcome({
     const productTab = [
         {
             productName: "television",
-            oldPrice: "$800.00",
-            newPrice: "$450.00",
+            oldPrice: "₹800.00",
+            newPrice: "₹450.00",
             componentName: "fashion & beauty",
             tab1: "women",
             tab2: "watches",
@@ -34,8 +34,8 @@ export default function Welcome({
     const productTab2 = [
         {
             productName: "television",
-            oldPrice: "$800.00",
-            newPrice: "$450.00",
+            oldPrice: "₹800.00",
+            newPrice: "₹450.00",
             componentName: "technology",
             tab1: "electronics",
             tab2: "television",
@@ -48,8 +48,8 @@ export default function Welcome({
     const productTab3 = [
         {
             productName: "television",
-            oldPrice: "$800.00",
-            newPrice: "$450.00",
+            oldPrice: "₹800.00",
+            newPrice: "₹450.00",
             componentName: "furniture & decor",
             tab1: "chair",
             tab2: "wardrobe",
@@ -66,8 +66,8 @@ export default function Welcome({
             lgimage: "https://img.freepik.com/free-photo/laptop-near-smartphone-tags-tablet-packet_23-2147961975.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
             bestsaleon: "television",
             stimage: "/images/tv.png",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
+            previousPrice: "₹800.00",
+            currentPrice: "₹450.00",
         }
     ];
     const mainbody2 = [
@@ -77,8 +77,8 @@ export default function Welcome({
             lgimage: "https://img.freepik.com/free-psd/summer-background-template-composition-with-tropical-leaves-beach-objects-dark-scene_103373-1741.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
             bestsaleon: "laptops",
             stimage: "/images/laptop-img.png",
-            previousPrice: "$600.00",
-            currentPrice: "$350.00",
+            previousPrice: "₹600.00",
+            currentPrice: "₹350.00",
         }
     ];
     const mainbody3 = [
@@ -88,59 +88,110 @@ export default function Welcome({
             lgimage: "https://img.freepik.com/free-photo/sale-with-special-discount-couch_23-2150040384.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
             bestsaleon: "blender",
             stimage: "/images/grinder.png",
-            previousPrice: "$400.00",
-            currentPrice: "$200.00",
+            previousPrice: "₹400.00",
+            currentPrice: "₹200.00",
         }
     ];
     const Product = [
         {
             star: 5,
             product: "shirts",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
-            image: "/images/laptop-img.png",
+            previousPrice: "₹800.00",
+            currentPrice: "₹450.00",
+            image: "https://img.freepik.com/free-photo/shirt-hanger-cyber-monday-concept_23-2148669962.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         },
         {
-            star: 3,
+            star: 4,
             product: "t-shirts",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
-            image: "/images/laptop-img.png",
+            previousPrice: "₹600.00",
+            currentPrice: "₹300.00",
+            image: "https://img.freepik.com/free-photo/man-wearing-t-shirt-gesturing_23-2149393642.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         },
         {
-            star: 3,
-            product: "t-shirts",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
-            image: "/images/laptop-img.png",
+            star: 5,
+            product: "sports wear",
+            previousPrice: "₹1500.00",
+            currentPrice: "₹1200.00",
+            image: "https://img.freepik.com/free-photo/young-sporty-man-wearing-sportswear-headband-looking-front-smiling-confident-standing-white-wall_141793-96737.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         },
         {
-            star: 3,
-            product: "t-shirts",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
-            image: "/images/laptop-img.png",
+            star: 4,
+            product: "mens jeans",
+            previousPrice: "₹1800.00",
+            currentPrice: "₹1450.00",
+            image: "https://img.freepik.com/free-photo/fashion-men-accessories-new-trendy-blue-jeans_1357-154.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         },
         {
-            star: 3,
-            product: "t-shirts",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
-            image: "/images/laptop-img.png",
+            star: 5,
+            product: "half jeans",
+            previousPrice: "₹900.00",
+            currentPrice: "₹550.00",
+            image: "https://img.freepik.com/free-photo/texture-blue-background-clothes-color_1203-6522.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         },
         {
-            star: 3,
-            product: "t-shirts",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
-            image: "/images/laptop-img.png",
+            star: 4,
+            product: "girls shirts",
+            previousPrice: "₹800.00",
+            currentPrice: "₹450.00",
+            image: "https://img.freepik.com/free-photo/young-woman-checked-shirt-jeans-looking-front-with-hand-head-looking-ashamed-front-view_176474-108638.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
         },
         {
-            star: 3,
-            product: "t-shirts",
-            previousPrice: "$800.00",
-            currentPrice: "$450.00",
-            image: "/images/laptop-img.png",
+            star: 4,
+            product: "girls formal",
+            previousPrice: "₹1350.00",
+            currentPrice: "₹860.00",
+            image: "https://img.freepik.com/free-photo/girls-suit_1303-4444.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+        }
+    ]
+    const Product2 = [
+        {
+            star: 5,
+            product: "laptops",
+            previousPrice: "₹80000.00",
+            currentPrice: "₹65500.00",
+            image: "https://img.freepik.com/free-photo/laptop-stone-surface-sea-background_1232-430.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+        },
+        {
+            star: 4,
+            product: "television",
+            previousPrice: "₹35000.00",
+            currentPrice: "₹30000.00",
+            image: "https://img.freepik.com/free-photo/smart-tv-screen-with-copy-space-wooden-table_53876-102019.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+        },
+        {
+            star: 5,
+            product: "phones",
+            previousPrice: "₹40500.00",
+            currentPrice: "₹30200.00",
+            image: "https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437084.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+        },
+        {
+            star: 4,
+            product: "gaming cpu",
+            previousPrice: "₹100800.00",
+            currentPrice: "₹93000.00",
+            image: "https://img.freepik.com/free-vector/modern-cpu-collection-with-flat-design_23-2147980931.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+        },
+        {
+            star: 5,
+            product: "cooling fan",
+            previousPrice: "₹23000.00",
+            currentPrice: "₹18050.00",
+            image: "https://img.freepik.com/free-vector/realistic-vertical-design-concept-with-computer-cooler-green-fan-white_1284-49191.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+        },
+        {
+            star: 4,
+            product: "chips",
+            previousPrice: "₹1800.00",
+            currentPrice: "₹1550.00",
+            image: "https://img.freepik.com/free-vector/isometric-cpu_23-2147983390.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+        },
+        {
+            star: 5,
+            product: "ram",
+            previousPrice: "₹1350.00",
+            currentPrice: "₹860.00",
+            image: "https://img.freepik.com/free-vector/isometric-computer-engineering-background_23-2148172110.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         }
     ]
     return (
@@ -354,7 +405,7 @@ export default function Welcome({
                 </ProductsShow>
                 <ProductsShow productsDetails={productTab2} >
                     <ProductBody productmainbody={mainbody2} />
-                    <ProductsList products={Product} />
+                    <ProductsList products={Product2} />
                 </ProductsShow>
                 <ProductsShow productsDetails={productTab3} >
                     <ProductBody productmainbody={mainbody3} />
