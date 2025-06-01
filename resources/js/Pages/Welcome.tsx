@@ -11,12 +11,26 @@ import {
     CardContent,
 } from "@/Components/ui/card"
 import { ProductsShow } from "@/Components/ProductShow";
-
+import { ProductBody } from "@/Components/ProductBody";
+import { ProductsList } from "@/Components/ProductsList";
 
 
 export default function Welcome({
 }) {
-
+    const ProductList = [
+        {
+            productName: "television",
+            oldPrice: "$800.00",
+            newPrice: "$450.00",
+            componentName: "fashion & beauty",
+            tab1: "women",
+            tab2: "watches",
+            tab3: 'men',
+            tab4: "accessories",
+            tab5: "bags",
+            tab6: "see all",
+        }
+    ];
     return (
         <>
             <MainLayout>
@@ -222,9 +236,10 @@ export default function Welcome({
                         </Carousel>
                     </div>
                 </section>
-                <ProductsShow />
-                <ProductsShow />
-                <ProductsShow />
+                <ProductsShow productsDetails={ProductList} >
+                    <ProductBody />
+                    <ProductsList />
+                </ProductsShow>
             </MainLayout >
         </>
     );
