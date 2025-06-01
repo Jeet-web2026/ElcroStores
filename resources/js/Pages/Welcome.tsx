@@ -9,11 +9,9 @@ import { Button } from "@/Components/ui/button";
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
 } from "@/Components/ui/card"
+import { ProductsShow } from "@/Components/ProductShow";
+
 
 
 export default function Welcome({
@@ -42,7 +40,11 @@ export default function Welcome({
                         <div className="h-[29rem] overflow-hidden flex-3 w-1/3">
                             <Carousel plugins={[
                                 Autoplay({ delay: 2000 }),
-                            ]}>
+                            ]}
+                                opts={{
+                                    align: "start",
+                                    loop: true,
+                                }}>
                                 <CarouselContent>
                                     <CarouselItem className="bg-[url(https://img.freepik.com/free-vector/modern-diwali-sale-composition-with-flat-design_23-2147939786.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740)]  bg-cover bg-center flex justify-center items-center relative">
                                         <div className="absolute bottom-5">
@@ -63,6 +65,7 @@ export default function Welcome({
                             <Carousel
                                 opts={{
                                     align: "start",
+                                    loop: true,
                                 }}
                                 plugins={[
                                     Autoplay({ delay: 1500 }),
@@ -84,6 +87,7 @@ export default function Welcome({
                             <Carousel
                                 opts={{
                                     align: "start",
+                                    loop: true,
                                 }}
                                 plugins={[
                                     Autoplay({ delay: 2000 }),
@@ -104,46 +108,122 @@ export default function Welcome({
                     </div>
                 </main>
                 <section className="py-5 h-full flex flex-row items-center justify-center bg-gray-100">
-                    <div className="flex flex-row items-center w-[1300px] gap-6 px-10">
-                        <Card className="w-full rounded-none shadow-none border-none">
-                            <CardHeader>
-                                <CardTitle>Card Title</CardTitle>
-                                <CardDescription>Card Description</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p>Card Content</p>
-                            </CardContent>
-                            <CardFooter>
-                                <p>Card Footer</p>
-                            </CardFooter>
-                        </Card>
-                        <Card className="w-full rounded-none shadow-none border-none">
-                            <CardHeader>
-                                <CardTitle>Card Title</CardTitle>
-                                <CardDescription>Card Description</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p>Card Content</p>
-                            </CardContent>
-                            <CardFooter>
-                                <p>Card Footer</p>
-                            </CardFooter>
-                        </Card>
-                        <Card className="w-full rounded-none shadow-none border-none">
-                            <CardHeader>
-                                <CardTitle>Card Title</CardTitle>
-                                <CardDescription>Card Description</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p>Card Content</p>
-                            </CardContent>
-                            <CardFooter>
-                                <p>Card Footer</p>
-                            </CardFooter>
-                        </Card>
+                    <div className="w-[1300px] px-10">
+                        <Carousel
+                            plugins={[
+                                Autoplay({ delay: 2000 }),
+                            ]}
+                            opts={{
+                                align: "start",
+                                loop: true,
+                            }}>
+                            <CarouselContent>
+                                <CarouselItem className="basis-1/3">
+                                    <Card className="w-full rounded-none shadow-none border-none group overflow-hidden cursor-pointer">
+                                        <CardContent className="relative h-[15rem] bg-cover bg-center flex justify-center items-center bg-[url(https://img.freepik.com/free-psd/sales-discount-facebook-template_23-2149959351.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740)]">
+                                            <div className="absolute left-0 top-0 w-full h-full bg-[#000000cf] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                                            <div className="z-10 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out text-center">
+                                                <h2 className="text-white text-base uppercase font-bold">
+                                                    latest mobile's & gadgets
+                                                </h2>
+                                                <div className="flex justify-center items-center">
+                                                    <Button
+                                                        variant="destructive"
+                                                        className="capitalize text-white rounded-none px-4 py-2 text-sm mt-2 shadow-none"
+                                                    >
+                                                        shop now <i className="ri-shopping-bag-4-line"></i>
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                                <CarouselItem className="basis-1/3">
+                                    <Card className="w-full rounded-none shadow-none border-none group overflow-hidden cursor-pointer">
+                                        <CardContent className="bg-[url(https://img.freepik.com/free-psd/black-friday-super-sale-web-banner-template_106176-4452.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740)] h-[15rem] bg-cover bg-center flex justify-center items-center relative">
+                                            <div className="absolute left-0 top-0 w-full h-full bg-[#000000cf] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                                            <div className="z-10 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out text-center">
+                                                <h2 className="text-white text-base uppercase font-bold">
+                                                    laptop's accessories
+                                                </h2>
+                                                <div className="flex justify-center items-center">
+                                                    <Button
+                                                        variant="destructive"
+                                                        className="capitalize text-white rounded-none px-4 py-2 text-sm mt-2 shadow-none"
+                                                    >
+                                                        shop now <i className="ri-shopping-bag-4-line"></i>
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                                <CarouselItem className="basis-1/3">
+                                    <Card className="w-full rounded-none shadow-none border-none group overflow-hidden cursor-pointer">
+                                        <CardContent className="bg-[url(https://img.freepik.com/free-psd/black-friday-super-sale-web-banner-template_106176-1656.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740)] h-[15rem] bg-cover bg-center flex justify-center items-center relative">
+                                            <div className="absolute left-0 top-0 w-full h-full bg-[#000000cf] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                                            <div className="z-10 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out text-center">
+                                                <h2 className="text-white text-base uppercase font-bold">
+                                                    home appliences & furniture
+                                                </h2>
+                                                <div className="flex justify-center items-center">
+                                                    <Button
+                                                        variant="destructive"
+                                                        className="capitalize text-white rounded-none px-4 py-2 text-sm mt-2 shadow-none"
+                                                    >
+                                                        shop now <i className="ri-shopping-bag-4-line"></i>
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                                <CarouselItem className="basis-1/3">
+                                    <Card className="w-full rounded-none shadow-none border-none group overflow-hidden cursor-pointer">
+                                        <CardContent className="bg-[url(https://img.freepik.com/free-vector/fashion-sale-landing-page-with-photo_23-2148288151.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740)] h-[15rem] bg-cover bg-center flex justify-center items-center relative">
+                                            <div className="absolute left-0 top-0 w-full h-full bg-[#000000cf] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                                            <div className="z-10 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out text-center">
+                                                <h2 className="text-white text-base uppercase font-bold">
+                                                    men's suits & fashion
+                                                </h2>
+                                                <div className="flex justify-center items-center">
+                                                    <Button
+                                                        variant="destructive"
+                                                        className="capitalize text-white rounded-none px-4 py-2 text-sm mt-2 shadow-none"
+                                                    >
+                                                        shop now <i className="ri-shopping-bag-4-line"></i>
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                                <CarouselItem className="basis-1/3">
+                                    <Card className="w-full rounded-none shadow-none border-none group overflow-hidden cursor-pointer">
+                                        <CardContent className="bg-[url(https://img.freepik.com/free-psd/banner-template-fashion-sale-with-woman-shopping-bags_23-2148855870.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740)] h-[15rem] bg-cover bg-center flex justify-center items-center relative">
+                                            <div className="absolute left-0 top-0 w-full h-full bg-[#000000cf] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                                            <div className="z-10 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out text-center">
+                                                <h2 className="text-white text-base uppercase font-bold">
+                                                    women's fashion & accessories
+                                                </h2>
+                                                <div className="flex justify-center items-center">
+                                                    <Button
+                                                        variant="destructive"
+                                                        className="capitalize text-white rounded-none px-4 py-2 text-sm mt-2 shadow-none"
+                                                    >
+                                                        shop now <i className="ri-shopping-bag-4-line"></i>
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                            </CarouselContent>
+                        </Carousel>
                     </div>
                 </section>
-            </MainLayout>
+                <ProductsShow />
+            </MainLayout >
         </>
     );
 }
