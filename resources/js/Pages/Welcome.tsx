@@ -194,6 +194,57 @@ export default function Welcome({
             image: "https://img.freepik.com/free-vector/isometric-computer-engineering-background_23-2148172110.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         }
     ]
+    const Product3 = [
+        {
+            star: 5,
+            product: "office chair",
+            previousPrice: "₹35000.00",
+            currentPrice: "₹20500.00",
+            image: "https://img.freepik.com/free-photo/home-appliance-seat-interior-ergonomic-sign_1172-512.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+        },
+        {
+            star: 4,
+            product: "wardrobe",
+            previousPrice: "₹63000.00",
+            currentPrice: "₹45000.00",
+            image: "https://img.freepik.com/free-photo/wardrobe-renovation-concept_23-2149190370.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+        },
+        {
+            star: 5,
+            product: "shoe rack",
+            previousPrice: "₹48500.00",
+            currentPrice: "₹33200.00",
+            image: "https://img.freepik.com/free-photo/footwear-stacked-shoe-rack-indoors_23-2150991600.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+        },
+        {
+            star: 4,
+            product: "sofa",
+            previousPrice: "₹140800.00",
+            currentPrice: "₹125000.00",
+            image: "https://img.freepik.com/free-vector/gallery-interior-illustration_1284-6400.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+        },
+        {
+            star: 5,
+            product: "kitchen set",
+            previousPrice: "₹93000.00",
+            currentPrice: "₹78050.00",
+            image: "https://img.freepik.com/free-photo/modern-kitchen-interior-design_23-2150771905.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+        },
+        {
+            star: 4,
+            product: "almirah",
+            previousPrice: "₹10800.00",
+            currentPrice: "₹90550.00",
+            image: "https://img.freepik.com/free-photo/3d-rendering-minimal-scandinavian-wood-walk-closet-with-wardrobe_105762-2306.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+        },
+        {
+            star: 5,
+            product: "ram",
+            previousPrice: "₹10350.00",
+            currentPrice: "₹8060.00",
+            image: "https://img.freepik.com/free-photo/young-man-going-art-gallery_23-2149709085.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+        }
+    ]
     return (
         <>
             <MainLayout>
@@ -409,7 +460,7 @@ export default function Welcome({
                 </ProductsShow>
                 <ProductsShow productsDetails={productTab3} >
                     <ProductBody productmainbody={mainbody3} />
-                    <ProductsList products={Product} />
+                    <ProductsList products={Product3} />
                 </ProductsShow>
             </MainLayout >
         </>
