@@ -70,7 +70,7 @@ export default function Welcome({
             currentPrice: "$450.00",
         }
     ];
-     const mainbody2 = [
+    const mainbody2 = [
         {
             salename: "summer sale",
             salecount: "upto 70% off",
@@ -79,9 +79,70 @@ export default function Welcome({
             stimage: "/images/laptop-img.png",
             previousPrice: "$600.00",
             currentPrice: "$350.00",
-            productImage: "/images/laptop-img.png",
         }
     ];
+    const mainbody3 = [
+        {
+            salename: "new year resolution",
+            salecount: "upto 75% off",
+            lgimage: "https://img.freepik.com/free-photo/sale-with-special-discount-couch_23-2150040384.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+            bestsaleon: "blender",
+            stimage: "/images/grinder.png",
+            previousPrice: "$400.00",
+            currentPrice: "$200.00",
+        }
+    ];
+    const Product = [
+        {
+            star: 5,
+            product: "shirts",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+            image: "/images/laptop-img.png",
+        },
+        {
+            star: 3,
+            product: "t-shirts",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+            image: "/images/laptop-img.png",
+        },
+        {
+            star: 3,
+            product: "t-shirts",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+            image: "/images/laptop-img.png",
+        },
+        {
+            star: 3,
+            product: "t-shirts",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+            image: "/images/laptop-img.png",
+        },
+        {
+            star: 3,
+            product: "t-shirts",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+            image: "/images/laptop-img.png",
+        },
+        {
+            star: 3,
+            product: "t-shirts",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+            image: "/images/laptop-img.png",
+        },
+        {
+            star: 3,
+            product: "t-shirts",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+            image: "/images/laptop-img.png",
+        }
+    ]
     return (
         <>
             <MainLayout>
@@ -288,16 +349,16 @@ export default function Welcome({
                     </div>
                 </section>
                 <ProductsShow productsDetails={productTab} >
-                    <ProductBody  productmainbody={mainbody} />
-                    <ProductsList />
+                    <ProductBody productmainbody={mainbody} />
+                    <ProductsList products={Product} />
                 </ProductsShow>
                 <ProductsShow productsDetails={productTab2} >
-                    <ProductBody  productmainbody={mainbody2} />
-                    <ProductsList />
+                    <ProductBody productmainbody={mainbody2} />
+                    <ProductsList products={Product} />
                 </ProductsShow>
                 <ProductsShow productsDetails={productTab3} >
-                    <ProductBody  productmainbody={mainbody} />
-                    <ProductsList />
+                    <ProductBody productmainbody={mainbody3} />
+                    <ProductsList products={Product} />
                 </ProductsShow>
             </MainLayout >
         </>
