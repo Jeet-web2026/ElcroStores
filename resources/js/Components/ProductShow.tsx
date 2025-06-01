@@ -26,11 +26,14 @@ export const ProductsShow = () => {
         </div>
         <div className="flex flex-row items-center">
           <Card className="rounded-none shadow-none border-0 w-3/4 h-[20rem]">
-            <CardContent className="pe-0 pb-0 flex flex-row items-center justify-center bg-[url(https://img.freepik.com/free-photo/laptop-near-smartphone-tags-tablet-packet_23-2147961975.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740)] h-full bg-center bg-cover bg-no-repeat">
-              <div>
-                <h2 className="text-3xl text-white uppercase font-bold mb-3 text-center">new year sale</h2>
-                <h2 className="text-xl text-white uppercase font-bold items-center flex text-center">flat<span className="text-5xl text-white mx-3">50%</span>off</h2>
-                <h2 className="text-7xl text-white uppercase font-black ms-5"></h2>
+            <CardContent className="p-0 flex flex-row items-center justify-center bg-[url(https://img.freepik.com/free-photo/laptop-near-smartphone-tags-tablet-packet_23-2147961975.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740)] h-full bg-center bg-cover bg-no-repeat">
+              <div className="w-full">
+                <h2 className="text-5xl text-white uppercase font-bold mb-3 text-center">new year sale</h2>
+                <h2 className="text-5xl text-white uppercase font-bold mb-3 text-center">flat 50% off</h2>
+                <p className="text-white text-base text-center uppercase">on all products</p>
+                <div className="flex justify-center items-center mt-5">
+                  <Button className="capitalize rounded-none shadow" variant="destructive">explore more<i className="ri-menu-search-line"></i></Button>
+                </div>
               </div>
             </CardContent>
           </Card>
