@@ -1,7 +1,7 @@
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
+    Carousel,
+    CarouselContent,
+    CarouselItem,
 } from "@/Components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import {

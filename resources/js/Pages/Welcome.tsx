@@ -17,7 +17,7 @@ import { ProductsList } from "@/Components/ProductsList";
 
 export default function Welcome({
 }) {
-    const ProductList = [
+    const productTab = [
         {
             productName: "television",
             oldPrice: "$800.00",
@@ -29,6 +29,57 @@ export default function Welcome({
             tab4: "accessories",
             tab5: "bags",
             tab6: "see all",
+        }
+    ];
+    const productTab2 = [
+        {
+            productName: "television",
+            oldPrice: "$800.00",
+            newPrice: "$450.00",
+            componentName: "technology",
+            tab1: "electronics",
+            tab2: "television",
+            tab3: 'conditional',
+            tab4: "laptop",
+            tab5: "smartphone",
+            tab6: "see all",
+        }
+    ];
+    const productTab3 = [
+        {
+            productName: "television",
+            oldPrice: "$800.00",
+            newPrice: "$450.00",
+            componentName: "furniture & decor",
+            tab1: "chair",
+            tab2: "wardrobe",
+            tab3: 'coffie tables',
+            tab4: "work place",
+            tab5: "angene mafin",
+            tab6: "see all",
+        }
+    ];
+    const mainbody = [
+        {
+            salename: "new year sale",
+            salecount: "flat 50% off",
+            lgimage: "https://img.freepik.com/free-photo/laptop-near-smartphone-tags-tablet-packet_23-2147961975.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+            bestsaleon: "television",
+            stimage: "/images/tv.png",
+            previousPrice: "$800.00",
+            currentPrice: "$450.00",
+        }
+    ];
+     const mainbody2 = [
+        {
+            salename: "summer sale",
+            salecount: "upto 70% off",
+            lgimage: "https://img.freepik.com/free-psd/summer-background-template-composition-with-tropical-leaves-beach-objects-dark-scene_103373-1741.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+            bestsaleon: "laptops",
+            stimage: "/images/laptop-img.png",
+            previousPrice: "$600.00",
+            currentPrice: "$350.00",
+            productImage: "/images/laptop-img.png",
         }
     ];
     return (
@@ -236,8 +287,16 @@ export default function Welcome({
                         </Carousel>
                     </div>
                 </section>
-                <ProductsShow productsDetails={ProductList} >
-                    <ProductBody />
+                <ProductsShow productsDetails={productTab} >
+                    <ProductBody  productmainbody={mainbody} />
+                    <ProductsList />
+                </ProductsShow>
+                <ProductsShow productsDetails={productTab2} >
+                    <ProductBody  productmainbody={mainbody2} />
+                    <ProductsList />
+                </ProductsShow>
+                <ProductsShow productsDetails={productTab3} >
+                    <ProductBody  productmainbody={mainbody} />
                     <ProductsList />
                 </ProductsShow>
             </MainLayout >
