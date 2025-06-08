@@ -59,7 +59,7 @@ export const Navbar = () => {
                     <Link href='/checkout' className="capitalize text-sm mb-0">checkout</Link>
                 </div>
             </nav>
-            <nav className="flex flex-row w-screen justify-between items-center px-14 py-3">
+            <nav className="flex flex-row w-screen justify-between items-center px-14 py-2">
                 <Link href="/" className="font-bold">
                     <div className="flex flex-column items-center">
                         <img src="/images/logo.png" alt="website-logo" className="h-20 w-20" />

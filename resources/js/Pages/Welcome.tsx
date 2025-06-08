@@ -245,6 +245,23 @@ export default function Welcome({
             image: "https://img.freepik.com/free-photo/young-man-going-art-gallery_23-2149709085.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
         }
     ]
+    const mainContent = [
+        {
+            bgImage: "https://img.freepik.com/free-vector/modern-diwali-sale-composition-with-flat-design_23-2147939786.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740",
+            title: "sale 50% off on all products",
+            subtitle: "be quick only 100 products available",
+        },
+        {
+            bgImage: "https://img.freepik.com/free-photo/concept-sales-with-coffee-copy-space_23-2148313081.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+            title: "75% of on electronics",
+            subtitle: "be quick only 150 products available",
+        },
+        {
+            bgImage: "https://img.freepik.com/free-photo/front-view-sale-word-bag-with-black-background_23-2148281053.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_hybrid&w=740",
+            title: "60% discound on fashion products",
+            subtitle: "Hurry up limited items available",
+        }
+    ]
     return (
         <>
             <MainLayout>
@@ -274,18 +291,24 @@ export default function Welcome({
                                     loop: true,
                                 }}>
                                 <CarouselContent>
-                                    <CarouselItem className="bg-[url(https://img.freepik.com/free-vector/modern-diwali-sale-composition-with-flat-design_23-2147939786.jpg?uid=R126305893&ga=GA1.1.1378415623.1732413357&semt=ais_items_boosted&w=740)]  bg-cover bg-center flex justify-center items-center relative">
-                                        <div className="absolute bottom-5">
-                                            <h2 className="text-white text-2xl text-center capitalize text-wrap font-bold">sale 50% off on all products</h2>
-                                            <p className="text-sm text-white text-center">be quick only 100 products available</p>
-                                            <div className="flex justify-center items-center mt-4">
-                                                <Button className="uppercase text-center rounded-none px-5 py-2" variant="destructive">shop now<i className="ri-arrow-right-s-line"></i></Button>
+                                    {mainContent.map((item, index) => (
+                                        <CarouselItem
+                                            key={index}
+                                            className={`bg-cover bg-center flex justify-center items-center relative h-[29rem]`}
+                                            style={{ backgroundImage: `url(${item.bgImage})` }}
+                                        >
+                                            <div className="absolute bottom-5">
+                                                <h2 className="text-white text-2xl text-center capitalize text-wrap font-bold">{item.title}</h2>
+                                                <p className="text-sm text-white text-center">{item.subtitle}</p>
+                                                <div className="flex justify-center items-center mt-4">
+                                                    <Button className="uppercase text-center rounded-none px-5 py-2" variant="destructive">shop now<i className="ri-arrow-right-s-line"></i></Button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </CarouselItem>
-                                    <CarouselItem>
-                                        <img src="https://i.pinimg.com/736x/e4/80/72/e4807274e80a9b0d028d3c495fa273bd.jpg" alt="diwali bonus" className="w-full h-[30rem] object-cover object-top" />
-                                    </CarouselItem>
+                                        </CarouselItem>
+                                    ))}
+                                    {/* <CarouselItem>
+                                        <img src="https://i.pinimg.com/736x/e4/80/72/e4807274e80a9b0d028d3c495fa273bd.jpg" alt="diwali bonus" className="w-full h-[29rem] object-cover object-top" />
+                                    </CarouselItem> */}
                                 </CarouselContent>
                             </Carousel>
                         </div>
